@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\hpms_project.Models\hpms_project.Models.vbproj" />
     <ProjectReference Include="..\hpms_project\hpms_project.vbproj" />
   </ItemGroup>
 
