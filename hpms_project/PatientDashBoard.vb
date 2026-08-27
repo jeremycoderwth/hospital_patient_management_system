@@ -1,4 +1,4 @@
-﻿Public Class UserControlDashBoard
+﻿Public Class PatientDashBoard
     Private Sub UserControlDashBoard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
