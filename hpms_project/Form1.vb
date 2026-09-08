@@ -6,12 +6,12 @@ Public Class Form1
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim connectionString As String = ConfigurationManager.ConnectionStrings("HPMSConnectionString").ConnectionString
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+        Dim connectionString = ConfigurationManager.ConnectionStrings("HPMSConnectionString").ConnectionString
 
         Using connection As New MySqlConnection(connectionString)
             Try
-                connection.Open()
+                connection.Open
 
                 MessageBox.Show("Successfully connected to MySQL 8.0!", "Connection Test")
             Catch ex As MySqlException
