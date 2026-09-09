@@ -42,4 +42,9 @@
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
     End Sub
+
+    Private Sub ViewAppointmentBtn_Click(sender As Object, e As EventArgs) Handles ViewAppointmentBtn.Click
+        Dim frm As New Appointment()
+        frm.Show()
+    End Sub
 End Class
