@@ -1,5 +1,4 @@
 <Solution>
-  <Project Path="hpms_project.BLL/hpms_project.BLL.vbproj" Id="f4bc08c4-f057-4cff-bb02-9fa48ee51cdf" />
   <Project Path="hpms_project.DAL/hpms_project.DAL.vbproj" Id="17c85b98-45dd-4f14-aad1-1dc548da645b" />
   <Project Path="hpms_project.Models/hpms_project.Models.vbproj" Id="e630b0cf-36d1-4121-b9fb-6df7710d6fef" />
   <Project Path="hpms_project/hpms_project.vbproj" />
