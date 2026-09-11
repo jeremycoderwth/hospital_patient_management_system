@@ -22,18 +22,18 @@ Partial Class UCBillsAndPayment
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle13 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle19 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle17 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle18 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle20 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle21 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle22 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle23 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle24 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As DataGridViewCellStyle = New DataGridViewCellStyle()
         BillsAndPaymentPanel = New Panel()
         MainTableLayoutPanel = New TableLayoutPanel()
         BillsHeaderPanel = New Panel()
@@ -231,14 +231,14 @@ Partial Class UCBillsAndPayment
         paymentInfoDataGridView.BorderStyle = BorderStyle.None
         paymentInfoDataGridView.CellBorderStyle = DataGridViewCellBorderStyle.None
         paymentInfoDataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle13.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle13.BackColor = SystemColors.Control
-        DataGridViewCellStyle13.Font = New Font("Lucida Sans Unicode", 11F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle13.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle13.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle13.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle13.WrapMode = DataGridViewTriState.True
-        paymentInfoDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = SystemColors.Control
+        DataGridViewCellStyle1.Font = New Font("Lucida Sans Unicode", 11F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
+        paymentInfoDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         paymentInfoDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         paymentInfoDataGridView.Columns.AddRange(New DataGridViewColumn() {columnPaymentInformation, columnPaymentValue})
         paymentInfoDataGridView.Dock = DockStyle.Fill
@@ -254,8 +254,8 @@ Partial Class UCBillsAndPayment
         ' 
         ' columnPaymentInformation
         ' 
-        DataGridViewCellStyle14.Font = New Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        columnPaymentInformation.DefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle2.Font = New Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        columnPaymentInformation.DefaultCellStyle = DataGridViewCellStyle2
         columnPaymentInformation.HeaderText = ""
         columnPaymentInformation.MinimumWidth = 8
         columnPaymentInformation.Name = "columnPaymentInformation"
@@ -263,8 +263,8 @@ Partial Class UCBillsAndPayment
         ' 
         ' columnPaymentValue
         ' 
-        DataGridViewCellStyle15.Font = New Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        columnPaymentValue.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle3.Font = New Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        columnPaymentValue.DefaultCellStyle = DataGridViewCellStyle3
         columnPaymentValue.HeaderText = ""
         columnPaymentValue.MinimumWidth = 8
         columnPaymentValue.Name = "columnPaymentValue"
@@ -302,14 +302,14 @@ Partial Class UCBillsAndPayment
         serviceChargesDataGridView.BorderStyle = BorderStyle.None
         serviceChargesDataGridView.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
         serviceChargesDataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle16.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle16.BackColor = SystemColors.Control
-        DataGridViewCellStyle16.Font = New Font("Lucida Sans Unicode", 11F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle16.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle16.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle16.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle16.WrapMode = DataGridViewTriState.True
-        serviceChargesDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = SystemColors.Control
+        DataGridViewCellStyle4.Font = New Font("Lucida Sans Unicode", 11F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle4.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.True
+        serviceChargesDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         serviceChargesDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         serviceChargesDataGridView.Columns.AddRange(New DataGridViewColumn() {columnDescription, columnAmount})
         serviceChargesDataGridView.Dock = DockStyle.Bottom
@@ -318,14 +318,14 @@ Partial Class UCBillsAndPayment
         serviceChargesDataGridView.Location = New Point(0, 56)
         serviceChargesDataGridView.Name = "serviceChargesDataGridView"
         serviceChargesDataGridView.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle19.Alignment = DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle19.BackColor = SystemColors.Control
-        DataGridViewCellStyle19.Font = New Font("Lucida Sans Unicode", 11F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle19.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle19.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle19.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle19.WrapMode = DataGridViewTriState.True
-        serviceChargesDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle19
+        DataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle7.BackColor = SystemColors.Control
+        DataGridViewCellStyle7.Font = New Font("Lucida Sans Unicode", 11F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle7.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle7.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = DataGridViewTriState.True
+        serviceChargesDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle7
         serviceChargesDataGridView.RowHeadersVisible = False
         serviceChargesDataGridView.RowHeadersWidth = 62
         serviceChargesDataGridView.Size = New Size(372, 329)
@@ -333,8 +333,8 @@ Partial Class UCBillsAndPayment
         ' 
         ' columnDescription
         ' 
-        DataGridViewCellStyle17.Font = New Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        columnDescription.DefaultCellStyle = DataGridViewCellStyle17
+        DataGridViewCellStyle5.Font = New Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        columnDescription.DefaultCellStyle = DataGridViewCellStyle5
         columnDescription.HeaderText = "DESCRIPTION"
         columnDescription.MinimumWidth = 8
         columnDescription.Name = "columnDescription"
@@ -343,8 +343,8 @@ Partial Class UCBillsAndPayment
         ' 
         ' columnAmount
         ' 
-        DataGridViewCellStyle18.Font = New Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        columnAmount.DefaultCellStyle = DataGridViewCellStyle18
+        DataGridViewCellStyle6.Font = New Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        columnAmount.DefaultCellStyle = DataGridViewCellStyle6
         columnAmount.HeaderText = "AMOUNT"
         columnAmount.MinimumWidth = 8
         columnAmount.Name = "columnAmount"
@@ -527,14 +527,14 @@ Partial Class UCBillsAndPayment
         billsAndPaymentDataGridView.BorderStyle = BorderStyle.None
         billsAndPaymentDataGridView.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
         billsAndPaymentDataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle20.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle20.BackColor = SystemColors.Control
-        DataGridViewCellStyle20.Font = New Font("Lucida Sans Unicode", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle20.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle20.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle20.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle20.WrapMode = DataGridViewTriState.True
-        billsAndPaymentDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle20
+        DataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = SystemColors.Control
+        DataGridViewCellStyle8.Font = New Font("Lucida Sans Unicode", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle8.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = DataGridViewTriState.True
+        billsAndPaymentDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
         billsAndPaymentDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         billsAndPaymentDataGridView.Columns.AddRange(New DataGridViewColumn() {columnDate, columnTotalAmount, columnStatus, columnView})
         billsAndPaymentDataGridView.Dock = DockStyle.Bottom
@@ -550,32 +550,32 @@ Partial Class UCBillsAndPayment
         ' 
         ' columnDate
         ' 
-        DataGridViewCellStyle21.Font = New Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        columnDate.DefaultCellStyle = DataGridViewCellStyle21
+        DataGridViewCellStyle9.Font = New Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        columnDate.DefaultCellStyle = DataGridViewCellStyle9
         columnDate.HeaderText = "DATE"
         columnDate.MinimumWidth = 8
         columnDate.Name = "columnDate"
         ' 
         ' columnTotalAmount
         ' 
-        DataGridViewCellStyle22.Font = New Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        columnTotalAmount.DefaultCellStyle = DataGridViewCellStyle22
+        DataGridViewCellStyle10.Font = New Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        columnTotalAmount.DefaultCellStyle = DataGridViewCellStyle10
         columnTotalAmount.HeaderText = "TOTAL AMOUNT"
         columnTotalAmount.MinimumWidth = 8
         columnTotalAmount.Name = "columnTotalAmount"
         ' 
         ' columnStatus
         ' 
-        DataGridViewCellStyle23.Font = New Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        columnStatus.DefaultCellStyle = DataGridViewCellStyle23
+        DataGridViewCellStyle11.Font = New Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        columnStatus.DefaultCellStyle = DataGridViewCellStyle11
         columnStatus.HeaderText = "STATUS"
         columnStatus.MinimumWidth = 8
         columnStatus.Name = "columnStatus"
         ' 
         ' columnView
         ' 
-        DataGridViewCellStyle24.Font = New Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        columnView.DefaultCellStyle = DataGridViewCellStyle24
+        DataGridViewCellStyle12.Font = New Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        columnView.DefaultCellStyle = DataGridViewCellStyle12
         columnView.HeaderText = ""
         columnView.LinkBehavior = LinkBehavior.HoverUnderline
         columnView.MinimumWidth = 8
@@ -615,7 +615,7 @@ Partial Class UCBillsAndPayment
         allbillsbtn.Name = "allbillsbtn"
         allbillsbtn.Size = New Size(187, 63)
         allbillsbtn.TabIndex = 0
-        allbillsbtn.Text = "allbills"
+        allbillsbtn.Text = "all bills"
         allbillsbtn.UseVisualStyleBackColor = False
         ' 
         ' unpaidbtn

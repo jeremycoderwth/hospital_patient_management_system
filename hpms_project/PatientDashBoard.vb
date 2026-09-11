@@ -1,4 +1,4 @@
-﻿Public Class UserControlDashBoard
+﻿Public Class PatientDashBoard
     Private Sub UserControlDashBoard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -16,6 +16,22 @@
     End Sub
 
     Private Sub EmailTextBox_TextChanged(sender As Object, e As EventArgs) Handles EmailTextBox.TextChanged
+
+    End Sub
+
+    Private Sub UCAccountInformationPanel_Paint(sender As Object, e As PaintEventArgs) Handles UCAccountInformationPanel.Paint
+
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
+    Private Sub TableLayoutPanel3_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel3.Paint
+
+    End Sub
+
+    Private Sub UCWelcomePanel_Paint(sender As Object, e As PaintEventArgs) Handles UCWelcomePanel.Paint
 
     End Sub
 End Class

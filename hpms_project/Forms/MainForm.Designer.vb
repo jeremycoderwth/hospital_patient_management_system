@@ -23,10 +23,20 @@ Partial Class MainForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         LeftSideBar = New Panel()
-        Panel1 = New Panel()
-        Label3 = New Label()
-        Label2 = New Label()
+        Panel2 = New Panel()
+        HorizontalLine = New Label()
         LOGO = New PictureBox()
+        LeftSideBarVerticalLine = New Label()
+        DashboardIcon = New PictureBox()
+        PeopleIcon = New PictureBox()
+        AppointmentIcon = New PictureBox()
+        MedRecordsIcon = New PictureBox()
+        BillsIcon = New PictureBox()
+        LogOutIcon = New PictureBox()
+        CostumerSupportPanel = New Panel()
+        CostumerSuportLabel3 = New Label()
+        CostumerSuportLabel2 = New Label()
+        CostumerSuportLabel1 = New Label()
         LogOutBtn = New Button()
         BillsBtn = New Button()
         MedRecordsBtn = New Button()
@@ -34,37 +44,42 @@ Partial Class MainForm
         PeopelBtn = New Button()
         DashboardBtn = New Button()
         TopPanel = New Panel()
-        Label1 = New Label()
+        MessageBtn = New Button()
+        NotifBtn = New Button()
+        Panel1 = New Panel()
+        verticalLine = New Label()
         ProfileLabel = New Label()
-        ProfilePicture = New PictureBox()
+        ProfilePictureIcon = New PictureBox()
+        TopPanelHorizontalLine = New Label()
+        MainFormPatientDashboardLabel = New Label()
         MainPanel = New Panel()
-        AppointmentPanel = New Panel()
-        ViewAppointmentBtn = New Button()
-        UpcomingAppointmentLabel = New Label()
-        BillOVPanel1 = New Panel()
-        PayBtn = New Button()
-        BillOVLabel = New Label()
-        HealthSummaryPanel = New Panel()
-        HealthSummaryLabel = New Label()
-        WelcomePanel = New Panel()
-        GreetingsLabel = New Label()
         LeftSideBar.SuspendLayout()
-        Panel1.SuspendLayout()
+        Panel2.SuspendLayout()
         CType(LOGO, ComponentModel.ISupportInitialize).BeginInit()
+        CType(DashboardIcon, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PeopleIcon, ComponentModel.ISupportInitialize).BeginInit()
+        CType(AppointmentIcon, ComponentModel.ISupportInitialize).BeginInit()
+        CType(MedRecordsIcon, ComponentModel.ISupportInitialize).BeginInit()
+        CType(BillsIcon, ComponentModel.ISupportInitialize).BeginInit()
+        CType(LogOutIcon, ComponentModel.ISupportInitialize).BeginInit()
+        CostumerSupportPanel.SuspendLayout()
         TopPanel.SuspendLayout()
-        CType(ProfilePicture, ComponentModel.ISupportInitialize).BeginInit()
-        MainPanel.SuspendLayout()
-        AppointmentPanel.SuspendLayout()
-        BillOVPanel1.SuspendLayout()
-        HealthSummaryPanel.SuspendLayout()
-        WelcomePanel.SuspendLayout()
+        Panel1.SuspendLayout()
+        CType(ProfilePictureIcon, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' LeftSideBar
         ' 
-        LeftSideBar.BackColor = Color.LightSkyBlue
-        LeftSideBar.Controls.Add(Panel1)
-        LeftSideBar.Controls.Add(LOGO)
+        LeftSideBar.BackColor = Color.FromArgb(CByte(167), CByte(239), CByte(241))
+        LeftSideBar.Controls.Add(Panel2)
+        LeftSideBar.Controls.Add(LeftSideBarVerticalLine)
+        LeftSideBar.Controls.Add(DashboardIcon)
+        LeftSideBar.Controls.Add(PeopleIcon)
+        LeftSideBar.Controls.Add(AppointmentIcon)
+        LeftSideBar.Controls.Add(MedRecordsIcon)
+        LeftSideBar.Controls.Add(BillsIcon)
+        LeftSideBar.Controls.Add(LogOutIcon)
+        LeftSideBar.Controls.Add(CostumerSupportPanel)
         LeftSideBar.Controls.Add(LogOutBtn)
         LeftSideBar.Controls.Add(BillsBtn)
         LeftSideBar.Controls.Add(MedRecordsBtn)
@@ -73,283 +88,405 @@ Partial Class MainForm
         LeftSideBar.Controls.Add(DashboardBtn)
         LeftSideBar.Dock = DockStyle.Left
         LeftSideBar.Location = New Point(0, 0)
+        LeftSideBar.Margin = New Padding(3, 2, 3, 2)
         LeftSideBar.Name = "LeftSideBar"
-        LeftSideBar.Size = New Size(188, 684)
+        LeftSideBar.Size = New Size(424, 1050)
         LeftSideBar.TabIndex = 0
         ' 
-        ' Panel1
+        ' Panel2
         ' 
-        Panel1.BackColor = Color.White
-        Panel1.Controls.Add(Label3)
-        Panel1.Controls.Add(Label2)
-        Panel1.Location = New Point(3, 540)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(179, 126)
-        Panel1.TabIndex = 3
+        Panel2.Controls.Add(HorizontalLine)
+        Panel2.Controls.Add(LOGO)
+        Panel2.Dock = DockStyle.Top
+        Panel2.Location = New Point(0, 0)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(422, 204)
+        Panel2.TabIndex = 13
         ' 
-        ' Label3
+        ' HorizontalLine
         ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(9, 43)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(161, 28)
-        Label3.TabIndex = 1
-        Label3.Text = "Contact Support"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(28, 15)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(119, 28)
-        Label2.TabIndex = 0
-        Label2.Text = "Need Help?"
+        HorizontalLine.BackColor = Color.Black
+        HorizontalLine.BorderStyle = BorderStyle.FixedSingle
+        HorizontalLine.Dock = DockStyle.Bottom
+        HorizontalLine.Location = New Point(0, 202)
+        HorizontalLine.MinimumSize = New Size(2, 2)
+        HorizontalLine.Name = "HorizontalLine"
+        HorizontalLine.Size = New Size(422, 2)
+        HorizontalLine.TabIndex = 7
         ' 
         ' LOGO
         ' 
         LOGO.BackColor = Color.White
-        LOGO.Location = New Point(31, 30)
+        LOGO.Location = New Point(124, 20)
+        LOGO.Margin = New Padding(3, 2, 3, 2)
         LOGO.Name = "LOGO"
-        LOGO.Size = New Size(127, 130)
+        LOGO.Size = New Size(159, 153)
         LOGO.TabIndex = 6
         LOGO.TabStop = False
         ' 
+        ' LeftSideBarVerticalLine
+        ' 
+        LeftSideBarVerticalLine.BackColor = Color.Black
+        LeftSideBarVerticalLine.BorderStyle = BorderStyle.FixedSingle
+        LeftSideBarVerticalLine.Dock = DockStyle.Right
+        LeftSideBarVerticalLine.Location = New Point(422, 0)
+        LeftSideBarVerticalLine.MinimumSize = New Size(2, 2)
+        LeftSideBarVerticalLine.Name = "LeftSideBarVerticalLine"
+        LeftSideBarVerticalLine.Size = New Size(2, 1050)
+        LeftSideBarVerticalLine.TabIndex = 3
+        ' 
+        ' DashboardIcon
+        ' 
+        DashboardIcon.BackColor = Color.Transparent
+        DashboardIcon.Image = My.Resources.Resources.minimalist
+        DashboardIcon.Location = New Point(31, 294)
+        DashboardIcon.Margin = New Padding(3, 2, 3, 2)
+        DashboardIcon.Name = "DashboardIcon"
+        DashboardIcon.Size = New Size(45, 49)
+        DashboardIcon.SizeMode = PictureBoxSizeMode.Zoom
+        DashboardIcon.TabIndex = 12
+        DashboardIcon.TabStop = False
+        ' 
+        ' PeopleIcon
+        ' 
+        PeopleIcon.BackColor = Color.Transparent
+        PeopleIcon.Image = My.Resources.Resources.user
+        PeopleIcon.Location = New Point(31, 343)
+        PeopleIcon.Margin = New Padding(3, 2, 3, 2)
+        PeopleIcon.Name = "PeopleIcon"
+        PeopleIcon.Size = New Size(45, 49)
+        PeopleIcon.SizeMode = PictureBoxSizeMode.Zoom
+        PeopleIcon.TabIndex = 11
+        PeopleIcon.TabStop = False
+        ' 
+        ' AppointmentIcon
+        ' 
+        AppointmentIcon.BackColor = Color.Transparent
+        AppointmentIcon.Image = My.Resources.Resources.calendar
+        AppointmentIcon.Location = New Point(31, 392)
+        AppointmentIcon.Margin = New Padding(3, 2, 3, 2)
+        AppointmentIcon.Name = "AppointmentIcon"
+        AppointmentIcon.Size = New Size(45, 49)
+        AppointmentIcon.SizeMode = PictureBoxSizeMode.Zoom
+        AppointmentIcon.TabIndex = 10
+        AppointmentIcon.TabStop = False
+        ' 
+        ' MedRecordsIcon
+        ' 
+        MedRecordsIcon.BackColor = Color.Transparent
+        MedRecordsIcon.Image = My.Resources.Resources.edit
+        MedRecordsIcon.Location = New Point(31, 441)
+        MedRecordsIcon.Margin = New Padding(3, 2, 3, 2)
+        MedRecordsIcon.Name = "MedRecordsIcon"
+        MedRecordsIcon.Size = New Size(45, 49)
+        MedRecordsIcon.SizeMode = PictureBoxSizeMode.Zoom
+        MedRecordsIcon.TabIndex = 9
+        MedRecordsIcon.TabStop = False
+        ' 
+        ' BillsIcon
+        ' 
+        BillsIcon.BackColor = Color.Transparent
+        BillsIcon.Image = My.Resources.Resources.invoice
+        BillsIcon.Location = New Point(31, 490)
+        BillsIcon.Margin = New Padding(3, 2, 3, 2)
+        BillsIcon.Name = "BillsIcon"
+        BillsIcon.Size = New Size(45, 49)
+        BillsIcon.SizeMode = PictureBoxSizeMode.Zoom
+        BillsIcon.TabIndex = 8
+        BillsIcon.TabStop = False
+        ' 
+        ' LogOutIcon
+        ' 
+        LogOutIcon.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
+        LogOutIcon.BackColor = Color.Transparent
+        LogOutIcon.Image = My.Resources.Resources._exit
+        LogOutIcon.Location = New Point(37, 692)
+        LogOutIcon.Margin = New Padding(3, 2, 3, 2)
+        LogOutIcon.Name = "LogOutIcon"
+        LogOutIcon.Size = New Size(45, 45)
+        LogOutIcon.SizeMode = PictureBoxSizeMode.Zoom
+        LogOutIcon.TabIndex = 7
+        LogOutIcon.TabStop = False
+        ' 
+        ' CostumerSupportPanel
+        ' 
+        CostumerSupportPanel.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
+        CostumerSupportPanel.BackColor = Color.White
+        CostumerSupportPanel.Controls.Add(CostumerSuportLabel3)
+        CostumerSupportPanel.Controls.Add(CostumerSuportLabel2)
+        CostumerSupportPanel.Controls.Add(CostumerSuportLabel1)
+        CostumerSupportPanel.Location = New Point(37, 785)
+        CostumerSupportPanel.Margin = New Padding(3, 2, 3, 2)
+        CostumerSupportPanel.Name = "CostumerSupportPanel"
+        CostumerSupportPanel.Size = New Size(341, 135)
+        CostumerSupportPanel.TabIndex = 3
+        ' 
+        ' CostumerSuportLabel3
+        ' 
+        CostumerSuportLabel3.AutoSize = True
+        CostumerSuportLabel3.Font = New Font("Lucida Sans Unicode", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        CostumerSuportLabel3.Location = New Point(37, 83)
+        CostumerSuportLabel3.Name = "CostumerSuportLabel3"
+        CostumerSuportLabel3.Size = New Size(258, 34)
+        CostumerSuportLabel3.TabIndex = 2
+        CostumerSuportLabel3.Text = "0962-072-8201"
+        ' 
+        ' CostumerSuportLabel2
+        ' 
+        CostumerSuportLabel2.AutoSize = True
+        CostumerSuportLabel2.Font = New Font("Lucida Sans Unicode", 14F, FontStyle.Bold)
+        CostumerSuportLabel2.Location = New Point(33, 49)
+        CostumerSuportLabel2.Name = "CostumerSuportLabel2"
+        CostumerSuportLabel2.Size = New Size(247, 34)
+        CostumerSuportLabel2.TabIndex = 1
+        CostumerSuportLabel2.Text = "Contact Support"
+        ' 
+        ' CostumerSuportLabel1
+        ' 
+        CostumerSuportLabel1.AutoSize = True
+        CostumerSuportLabel1.Font = New Font("Lucida Sans Unicode", 14F, FontStyle.Bold)
+        CostumerSuportLabel1.Location = New Point(54, 15)
+        CostumerSuportLabel1.Name = "CostumerSuportLabel1"
+        CostumerSuportLabel1.Size = New Size(180, 34)
+        CostumerSuportLabel1.TabIndex = 0
+        CostumerSuportLabel1.Text = "Need Help?"
+        ' 
         ' LogOutBtn
         ' 
-        LogOutBtn.Location = New Point(16, 493)
+        LogOutBtn.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
+        LogOutBtn.FlatAppearance.BorderSize = 0
+        LogOutBtn.FlatStyle = FlatStyle.Flat
+        LogOutBtn.Font = New Font("Lucida Sans Unicode", 18F, FontStyle.Bold)
+        LogOutBtn.Location = New Point(80, 692)
+        LogOutBtn.Margin = New Padding(3, 2, 3, 2)
         LogOutBtn.Name = "LogOutBtn"
-        LogOutBtn.Size = New Size(131, 41)
+        LogOutBtn.Size = New Size(344, 53)
         LogOutBtn.TabIndex = 5
         LogOutBtn.Text = "LOG OUT"
+        LogOutBtn.TextAlign = ContentAlignment.MiddleLeft
         LogOutBtn.UseVisualStyleBackColor = True
         ' 
         ' BillsBtn
         ' 
-        BillsBtn.Location = New Point(16, 349)
+        BillsBtn.BackColor = Color.Transparent
+        BillsBtn.FlatAppearance.BorderSize = 0
+        BillsBtn.FlatStyle = FlatStyle.Flat
+        BillsBtn.Font = New Font("Lucida Sans Unicode", 18F, FontStyle.Bold)
+        BillsBtn.Location = New Point(74, 490)
+        BillsBtn.Margin = New Padding(3, 2, 3, 2)
         BillsBtn.Name = "BillsBtn"
-        BillsBtn.Size = New Size(142, 41)
+        BillsBtn.Size = New Size(350, 49)
         BillsBtn.TabIndex = 4
         BillsBtn.Text = "BILLS"
-        BillsBtn.UseVisualStyleBackColor = True
+        BillsBtn.TextAlign = ContentAlignment.MiddleLeft
+        BillsBtn.UseVisualStyleBackColor = False
         ' 
         ' MedRecordsBtn
         ' 
-        MedRecordsBtn.Location = New Point(16, 311)
+        MedRecordsBtn.BackColor = Color.Transparent
+        MedRecordsBtn.FlatAppearance.BorderSize = 0
+        MedRecordsBtn.FlatStyle = FlatStyle.Flat
+        MedRecordsBtn.Font = New Font("Lucida Sans Unicode", 18F, FontStyle.Bold)
+        MedRecordsBtn.Location = New Point(74, 441)
+        MedRecordsBtn.Margin = New Padding(3, 2, 3, 2)
         MedRecordsBtn.Name = "MedRecordsBtn"
-        MedRecordsBtn.Size = New Size(142, 41)
+        MedRecordsBtn.Size = New Size(350, 49)
         MedRecordsBtn.TabIndex = 3
         MedRecordsBtn.Text = "MED RECORDS"
-        MedRecordsBtn.UseVisualStyleBackColor = True
+        MedRecordsBtn.TextAlign = ContentAlignment.MiddleLeft
+        MedRecordsBtn.UseVisualStyleBackColor = False
         ' 
         ' AppointmentBtn
         ' 
-        AppointmentBtn.Location = New Point(16, 275)
+        AppointmentBtn.BackColor = Color.Transparent
+        AppointmentBtn.FlatAppearance.BorderSize = 0
+        AppointmentBtn.FlatStyle = FlatStyle.Flat
+        AppointmentBtn.Font = New Font("Lucida Sans Unicode", 18F, FontStyle.Bold)
+        AppointmentBtn.Location = New Point(74, 392)
+        AppointmentBtn.Margin = New Padding(3, 2, 3, 2)
         AppointmentBtn.Name = "AppointmentBtn"
-        AppointmentBtn.Size = New Size(142, 41)
+        AppointmentBtn.Size = New Size(350, 49)
         AppointmentBtn.TabIndex = 2
         AppointmentBtn.Text = "APPOINTMENT"
-        AppointmentBtn.UseVisualStyleBackColor = True
+        AppointmentBtn.TextAlign = ContentAlignment.MiddleLeft
+        AppointmentBtn.UseVisualStyleBackColor = False
         ' 
         ' PeopelBtn
         ' 
-        PeopelBtn.Location = New Point(16, 237)
+        PeopelBtn.BackColor = Color.Transparent
+        PeopelBtn.FlatAppearance.BorderSize = 0
+        PeopelBtn.FlatStyle = FlatStyle.Flat
+        PeopelBtn.Font = New Font("Lucida Sans Unicode", 18F, FontStyle.Bold)
+        PeopelBtn.Location = New Point(74, 343)
+        PeopelBtn.Margin = New Padding(3, 2, 3, 2)
         PeopelBtn.Name = "PeopelBtn"
-        PeopelBtn.Size = New Size(142, 41)
+        PeopelBtn.Size = New Size(350, 49)
         PeopelBtn.TabIndex = 1
         PeopelBtn.Text = "PEOPLE"
-        PeopelBtn.UseVisualStyleBackColor = True
+        PeopelBtn.TextAlign = ContentAlignment.MiddleLeft
+        PeopelBtn.UseVisualStyleBackColor = False
         ' 
         ' DashboardBtn
         ' 
-        DashboardBtn.Location = New Point(16, 199)
+        DashboardBtn.BackColor = Color.Transparent
+        DashboardBtn.FlatAppearance.BorderSize = 0
+        DashboardBtn.FlatStyle = FlatStyle.Flat
+        DashboardBtn.Font = New Font("Lucida Sans Unicode", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        DashboardBtn.Location = New Point(70, 294)
+        DashboardBtn.Margin = New Padding(3, 2, 3, 2)
         DashboardBtn.Name = "DashboardBtn"
-        DashboardBtn.Size = New Size(142, 41)
+        DashboardBtn.Size = New Size(352, 49)
         DashboardBtn.TabIndex = 0
         DashboardBtn.Text = "DASHBOARD"
-        DashboardBtn.UseVisualStyleBackColor = True
+        DashboardBtn.TextAlign = ContentAlignment.MiddleLeft
+        DashboardBtn.UseVisualStyleBackColor = False
         ' 
         ' TopPanel
         ' 
-        TopPanel.BackColor = Color.LightSkyBlue
-        TopPanel.Controls.Add(Label1)
-        TopPanel.Controls.Add(ProfileLabel)
-        TopPanel.Controls.Add(ProfilePicture)
+        TopPanel.BackColor = Color.FromArgb(CByte(167), CByte(239), CByte(241))
+        TopPanel.Controls.Add(MessageBtn)
+        TopPanel.Controls.Add(NotifBtn)
+        TopPanel.Controls.Add(Panel1)
+        TopPanel.Controls.Add(TopPanelHorizontalLine)
+        TopPanel.Controls.Add(MainFormPatientDashboardLabel)
         TopPanel.Dock = DockStyle.Top
-        TopPanel.Location = New Point(188, 0)
+        TopPanel.Location = New Point(424, 0)
+        TopPanel.Margin = New Padding(3, 2, 3, 2)
         TopPanel.Name = "TopPanel"
-        TopPanel.Size = New Size(1022, 107)
+        TopPanel.Size = New Size(1352, 138)
         TopPanel.TabIndex = 1
         ' 
-        ' Label1
+        ' MessageBtn
         ' 
-        Label1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(84, 30)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(218, 32)
-        Label1.TabIndex = 2
-        Label1.Text = "Patient Dashboard"
+        MessageBtn.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        MessageBtn.BackColor = Color.Transparent
+        MessageBtn.BackgroundImage = My.Resources.Resources.chatting
+        MessageBtn.BackgroundImageLayout = ImageLayout.Zoom
+        MessageBtn.FlatAppearance.BorderSize = 0
+        MessageBtn.FlatStyle = FlatStyle.Flat
+        MessageBtn.Location = New Point(837, 36)
+        MessageBtn.Name = "MessageBtn"
+        MessageBtn.Size = New Size(50, 50)
+        MessageBtn.TabIndex = 8
+        MessageBtn.UseVisualStyleBackColor = False
+        ' 
+        ' NotifBtn
+        ' 
+        NotifBtn.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        NotifBtn.BackColor = Color.Transparent
+        NotifBtn.BackgroundImage = My.Resources.Resources.notification
+        NotifBtn.BackgroundImageLayout = ImageLayout.Zoom
+        NotifBtn.FlatAppearance.BorderSize = 0
+        NotifBtn.FlatStyle = FlatStyle.Flat
+        NotifBtn.Location = New Point(744, 36)
+        NotifBtn.Name = "NotifBtn"
+        NotifBtn.Size = New Size(50, 50)
+        NotifBtn.TabIndex = 7
+        NotifBtn.UseVisualStyleBackColor = False
+        ' 
+        ' Panel1
+        ' 
+        Panel1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Panel1.Controls.Add(verticalLine)
+        Panel1.Controls.Add(ProfileLabel)
+        Panel1.Controls.Add(ProfilePictureIcon)
+        Panel1.Location = New Point(951, 0)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(401, 136)
+        Panel1.TabIndex = 6
+        ' 
+        ' verticalLine
+        ' 
+        verticalLine.BackColor = Color.Black
+        verticalLine.BorderStyle = BorderStyle.FixedSingle
+        verticalLine.Dock = DockStyle.Left
+        verticalLine.Location = New Point(0, 0)
+        verticalLine.MinimumSize = New Size(2, 2)
+        verticalLine.Name = "verticalLine"
+        verticalLine.Size = New Size(2, 136)
+        verticalLine.TabIndex = 3
         ' 
         ' ProfileLabel
         ' 
-        ProfileLabel.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ProfileLabel.AutoSize = True
         ProfileLabel.BackColor = Color.Transparent
-        ProfileLabel.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        ProfileLabel.Location = New Point(684, 30)
+        ProfileLabel.Font = New Font("Lucida Sans Unicode", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        ProfileLabel.Location = New Point(106, 36)
         ProfileLabel.Name = "ProfileLabel"
-        ProfileLabel.Size = New Size(157, 32)
+        ProfileLabel.Size = New Size(253, 44)
         ProfileLabel.TabIndex = 1
         ProfileLabel.Text = "Profile Name"
         ' 
-        ' ProfilePicture
+        ' ProfilePictureIcon
         ' 
-        ProfilePicture.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        ProfilePicture.BackColor = Color.White
-        ProfilePicture.Location = New Point(612, 21)
-        ProfilePicture.Name = "ProfilePicture"
-        ProfilePicture.Size = New Size(66, 54)
-        ProfilePicture.SizeMode = PictureBoxSizeMode.Zoom
-        ProfilePicture.TabIndex = 0
-        ProfilePicture.TabStop = False
+        ProfilePictureIcon.BackColor = Color.White
+        ProfilePictureIcon.Location = New Point(23, 37)
+        ProfilePictureIcon.Margin = New Padding(3, 2, 3, 2)
+        ProfilePictureIcon.Name = "ProfilePictureIcon"
+        ProfilePictureIcon.Size = New Size(50, 50)
+        ProfilePictureIcon.SizeMode = PictureBoxSizeMode.Zoom
+        ProfilePictureIcon.TabIndex = 0
+        ProfilePictureIcon.TabStop = False
+        ' 
+        ' TopPanelHorizontalLine
+        ' 
+        TopPanelHorizontalLine.BackColor = Color.Black
+        TopPanelHorizontalLine.BorderStyle = BorderStyle.FixedSingle
+        TopPanelHorizontalLine.Dock = DockStyle.Bottom
+        TopPanelHorizontalLine.Location = New Point(0, 136)
+        TopPanelHorizontalLine.MinimumSize = New Size(2, 2)
+        TopPanelHorizontalLine.Name = "TopPanelHorizontalLine"
+        TopPanelHorizontalLine.Size = New Size(1352, 2)
+        TopPanelHorizontalLine.TabIndex = 5
+        ' 
+        ' MainFormPatientDashboardLabel
+        ' 
+        MainFormPatientDashboardLabel.AutoSize = True
+        MainFormPatientDashboardLabel.Font = New Font("Lucida Sans Unicode", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        MainFormPatientDashboardLabel.Location = New Point(131, 36)
+        MainFormPatientDashboardLabel.Name = "MainFormPatientDashboardLabel"
+        MainFormPatientDashboardLabel.Size = New Size(355, 44)
+        MainFormPatientDashboardLabel.TabIndex = 2
+        MainFormPatientDashboardLabel.Text = "Patient Dashboard"
         ' 
         ' MainPanel
         ' 
-        MainPanel.BackColor = SystemColors.ControlDark
-        MainPanel.Controls.Add(AppointmentPanel)
-        MainPanel.Controls.Add(BillOVPanel1)
-        MainPanel.Controls.Add(HealthSummaryPanel)
-        MainPanel.Controls.Add(WelcomePanel)
+        MainPanel.BackColor = Color.FromArgb(CByte(229), CByte(228), CByte(226))
         MainPanel.Dock = DockStyle.Fill
-        MainPanel.Location = New Point(188, 107)
+        MainPanel.Location = New Point(424, 138)
         MainPanel.Name = "MainPanel"
-        MainPanel.Size = New Size(1022, 577)
+        MainPanel.Size = New Size(1352, 912)
         MainPanel.TabIndex = 2
-        ' 
-        ' AppointmentPanel
-        ' 
-        AppointmentPanel.BackColor = Color.White
-        AppointmentPanel.Controls.Add(ViewAppointmentBtn)
-        AppointmentPanel.Controls.Add(UpcomingAppointmentLabel)
-        AppointmentPanel.Location = New Point(474, 6)
-        AppointmentPanel.Name = "AppointmentPanel"
-        AppointmentPanel.Size = New Size(539, 334)
-        AppointmentPanel.TabIndex = 4
-        ' 
-        ' ViewAppointmentBtn
-        ' 
-        ViewAppointmentBtn.Location = New Point(39, 243)
-        ViewAppointmentBtn.Name = "ViewAppointmentBtn"
-        ViewAppointmentBtn.Size = New Size(182, 34)
-        ViewAppointmentBtn.TabIndex = 3
-        ViewAppointmentBtn.Text = "View Appointment"
-        ViewAppointmentBtn.UseVisualStyleBackColor = True
-        ' 
-        ' UpcomingAppointmentLabel
-        ' 
-        UpcomingAppointmentLabel.AutoSize = True
-        UpcomingAppointmentLabel.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        UpcomingAppointmentLabel.Location = New Point(39, 19)
-        UpcomingAppointmentLabel.Name = "UpcomingAppointmentLabel"
-        UpcomingAppointmentLabel.Size = New Size(276, 32)
-        UpcomingAppointmentLabel.TabIndex = 2
-        UpcomingAppointmentLabel.Text = "Upcoming Appointment"
-        ' 
-        ' BillOVPanel1
-        ' 
-        BillOVPanel1.BackColor = Color.White
-        BillOVPanel1.Controls.Add(PayBtn)
-        BillOVPanel1.Controls.Add(BillOVLabel)
-        BillOVPanel1.Location = New Point(6, 346)
-        BillOVPanel1.Name = "BillOVPanel1"
-        BillOVPanel1.Size = New Size(1007, 219)
-        BillOVPanel1.TabIndex = 2
-        ' 
-        ' PayBtn
-        ' 
-        PayBtn.Location = New Point(294, 62)
-        PayBtn.Name = "PayBtn"
-        PayBtn.Size = New Size(112, 34)
-        PayBtn.TabIndex = 3
-        PayBtn.Text = "Pay Now"
-        PayBtn.UseVisualStyleBackColor = True
-        ' 
-        ' BillOVLabel
-        ' 
-        BillOVLabel.AutoSize = True
-        BillOVLabel.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        BillOVLabel.Location = New Point(17, 18)
-        BillOVLabel.Name = "BillOVLabel"
-        BillOVLabel.Size = New Size(190, 32)
-        BillOVLabel.TabIndex = 2
-        BillOVLabel.Text = "Billing Overview"
-        ' 
-        ' HealthSummaryPanel
-        ' 
-        HealthSummaryPanel.BackColor = Color.White
-        HealthSummaryPanel.Controls.Add(HealthSummaryLabel)
-        HealthSummaryPanel.Location = New Point(6, 121)
-        HealthSummaryPanel.Name = "HealthSummaryPanel"
-        HealthSummaryPanel.Size = New Size(462, 219)
-        HealthSummaryPanel.TabIndex = 1
-        ' 
-        ' HealthSummaryLabel
-        ' 
-        HealthSummaryLabel.AutoSize = True
-        HealthSummaryLabel.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        HealthSummaryLabel.Location = New Point(17, 22)
-        HealthSummaryLabel.Name = "HealthSummaryLabel"
-        HealthSummaryLabel.Size = New Size(198, 32)
-        HealthSummaryLabel.TabIndex = 1
-        HealthSummaryLabel.Text = "Health Summary"
-        ' 
-        ' WelcomePanel
-        ' 
-        WelcomePanel.BackColor = Color.White
-        WelcomePanel.Controls.Add(GreetingsLabel)
-        WelcomePanel.Location = New Point(6, 6)
-        WelcomePanel.Name = "WelcomePanel"
-        WelcomePanel.Size = New Size(462, 109)
-        WelcomePanel.TabIndex = 0
-        ' 
-        ' GreetingsLabel
-        ' 
-        GreetingsLabel.AutoSize = True
-        GreetingsLabel.Font = New Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        GreetingsLabel.Location = New Point(17, 19)
-        GreetingsLabel.Name = "GreetingsLabel"
-        GreetingsLabel.Size = New Size(150, 28)
-        GreetingsLabel.TabIndex = 0
-        GreetingsLabel.Text = "Welcome Back"
         ' 
         ' MainForm
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(10F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1210, 684)
+        ClientSize = New Size(1776, 1050)
         Controls.Add(MainPanel)
         Controls.Add(TopPanel)
         Controls.Add(LeftSideBar)
+        Font = New Font("Microsoft Sans Serif", 8.25F)
+        Margin = New Padding(3, 2, 3, 2)
+        MinimumSize = New Size(1280, 720)
         Name = "MainForm"
+        WindowState = FormWindowState.Maximized
         LeftSideBar.ResumeLayout(False)
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
+        Panel2.ResumeLayout(False)
         CType(LOGO, ComponentModel.ISupportInitialize).EndInit()
+        CType(DashboardIcon, ComponentModel.ISupportInitialize).EndInit()
+        CType(PeopleIcon, ComponentModel.ISupportInitialize).EndInit()
+        CType(AppointmentIcon, ComponentModel.ISupportInitialize).EndInit()
+        CType(MedRecordsIcon, ComponentModel.ISupportInitialize).EndInit()
+        CType(BillsIcon, ComponentModel.ISupportInitialize).EndInit()
+        CType(LogOutIcon, ComponentModel.ISupportInitialize).EndInit()
+        CostumerSupportPanel.ResumeLayout(False)
+        CostumerSupportPanel.PerformLayout()
         TopPanel.ResumeLayout(False)
         TopPanel.PerformLayout()
-        CType(ProfilePicture, ComponentModel.ISupportInitialize).EndInit()
-        MainPanel.ResumeLayout(False)
-        AppointmentPanel.ResumeLayout(False)
-        AppointmentPanel.PerformLayout()
-        BillOVPanel1.ResumeLayout(False)
-        BillOVPanel1.PerformLayout()
-        HealthSummaryPanel.ResumeLayout(False)
-        HealthSummaryPanel.PerformLayout()
-        WelcomePanel.ResumeLayout(False)
-        WelcomePanel.PerformLayout()
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
+        CType(ProfilePictureIcon, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -361,22 +498,27 @@ Partial Class MainForm
     Friend WithEvents AppointmentBtn As Button
     Friend WithEvents PeopelBtn As Button
     Friend WithEvents DashboardBtn As Button
-    Friend WithEvents MainPanel As Panel
-    Friend WithEvents LOGO As PictureBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents MainFormPatientDashboardLabel As Label
     Friend WithEvents ProfileLabel As Label
-    Friend WithEvents ProfilePicture As PictureBox
-    Friend WithEvents BillOVPanel1 As Panel
-    Friend WithEvents HealthSummaryPanel As Panel
-    Friend WithEvents WelcomePanel As Panel
-    Friend WithEvents AppointmentPanel As Panel
-    Friend WithEvents HealthSummaryLabel As Label
-    Friend WithEvents GreetingsLabel As Label
-    Friend WithEvents UpcomingAppointmentLabel As Label
-    Friend WithEvents ViewAppointmentBtn As Button
-    Friend WithEvents BillOVLabel As Label
-    Friend WithEvents PayBtn As Button
+    Friend WithEvents ProfilePictureIcon As PictureBox
+    Friend WithEvents CostumerSupportPanel As Panel
+    Friend WithEvents CostumerSuportLabel2 As Label
+    Friend WithEvents CostumerSuportLabel1 As Label
+    Friend WithEvents AppointmentIcon As PictureBox
+    Friend WithEvents MedRecordsIcon As PictureBox
+    Friend WithEvents BillsIcon As PictureBox
+    Friend WithEvents LogOutIcon As PictureBox
+    Friend WithEvents DashboardIcon As PictureBox
+    Friend WithEvents PeopleIcon As PictureBox
+    Friend WithEvents CostumerSuportLabel3 As Label
+    Friend WithEvents MainPanel As Panel
+    Friend WithEvents LeftSideBarVerticalLine As Label
+    Friend WithEvents TopPanelHorizontalLine As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents LOGO As PictureBox
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents verticalLine As Label
+    Friend WithEvents HorizontalLine As Label
+    Friend WithEvents NotifBtn As Button
+    Friend WithEvents MessageBtn As Button
 End Class
