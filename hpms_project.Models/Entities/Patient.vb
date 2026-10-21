@@ -58,7 +58,7 @@ Public Class Patient
 
     Public Property Visits As List(Of Visit) = New List(Of Visit)()
 
-    Public Property Appointments As List(Of Appointment) = New List(Of Appointment)()
+    Public Property Appointments As List(Of Appointment1) = New List(Of Appointment1)()
 
     Public Property Invoices As List(Of Invoice) = New List(Of Invoice)()
 End Class

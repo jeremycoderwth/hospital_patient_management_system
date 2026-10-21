@@ -17,7 +17,7 @@
 
     Public Property Patient As Patient
     Public Property Doctor As Staff
-    Public Property Appointment As Appointment
+    Public Property Appointment As Appointment1
     Public Property VitalSigns As List(Of VitalSign) = New List(Of VitalSign)()
     Public Property Diagnoses As List(Of VisitDiagnosis) = New List(Of VisitDiagnosis)()
     Public Property Prescriptions As List(Of Prescription) = New List(Of Prescription)()
