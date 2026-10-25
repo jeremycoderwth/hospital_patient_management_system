@@ -1,3 +1,3 @@
-﻿Public Class Form1
+﻿Public Class Appointment1
 
 End Class
