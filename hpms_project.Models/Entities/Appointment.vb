@@ -1,6 +1,6 @@
 ﻿Imports hpms_project.Models
 
-Public Class Appointment
+Public Class Appointment1
     Public Property AppointmentID As Integer
     Public Property CreatedBy As Integer
     Public Property PatientID As Integer
