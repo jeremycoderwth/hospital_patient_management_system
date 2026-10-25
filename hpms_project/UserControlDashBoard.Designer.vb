@@ -23,40 +23,40 @@ Partial Class UserControlDashBoard
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         UCWelcomePanel = New Panel()
-        UCProfileLabel = New Label()
         ProfileInfoLabel = New Label()
+        UCProfileLabel = New Label()
         Panel1 = New Panel()
-        UCPersonalInfoPanel = New Panel()
-        UCAccountInformationPanel = New Panel()
-        PictureBox1 = New PictureBox()
-        OverviewNameLabel = New Label()
-        OverviewIDLabel = New Label()
-        OverviewEmailLabel = New Label()
-        OverviewContactLabel = New Label()
-        OverviewBirthdateLabel = New Label()
-        OverviewGenderLabel = New Label()
         OverviewAddressLabel = New Label()
-        PersonalInfoLabel = New Label()
-        AccountInfoLabel = New Label()
-        UserNameLabel = New Label()
-        CPNumberLabel = New Label()
-        EMailLabel = New Label()
-        FullNameLabel = New Label()
-        BirthdateLabel = New Label()
-        PasswordLabel = New Label()
-        ChangePassBtn = New Button()
-        FullNameTextBox = New TextBox()
-        BirthDateTextBox = New TextBox()
+        OverviewGenderLabel = New Label()
+        OverviewBirthdateLabel = New Label()
+        OverviewContactLabel = New Label()
+        OverviewEmailLabel = New Label()
+        OverviewIDLabel = New Label()
+        OverviewNameLabel = New Label()
+        PictureBox1 = New PictureBox()
+        UCPersonalInfoPanel = New Panel()
         CPNumberTextBox = New TextBox()
-        UsernameTextBox = New TextBox()
-        EmailTextBox = New TextBox()
-        PassTextBox = New TextBox()
+        BirthDateTextBox = New TextBox()
+        FullNameTextBox = New TextBox()
+        BirthdateLabel = New Label()
+        FullNameLabel = New Label()
+        PersonalInfoLabel = New Label()
+        CPNumberLabel = New Label()
+        UCAccountInformationPanel = New Panel()
         EditLabel = New Label()
+        PassTextBox = New TextBox()
+        EmailTextBox = New TextBox()
+        UsernameTextBox = New TextBox()
+        ChangePassBtn = New Button()
+        PasswordLabel = New Label()
+        EMailLabel = New Label()
+        UserNameLabel = New Label()
+        AccountInfoLabel = New Label()
         UCWelcomePanel.SuspendLayout()
         Panel1.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         UCPersonalInfoPanel.SuspendLayout()
         UCAccountInformationPanel.SuspendLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' UCWelcomePanel
@@ -64,31 +64,34 @@ Partial Class UserControlDashBoard
         UCWelcomePanel.BackColor = Color.White
         UCWelcomePanel.Controls.Add(ProfileInfoLabel)
         UCWelcomePanel.Controls.Add(UCProfileLabel)
-        UCWelcomePanel.Location = New Point(3, 3)
+        UCWelcomePanel.Location = New Point(2, 2)
+        UCWelcomePanel.Margin = New Padding(2, 2, 2, 2)
         UCWelcomePanel.Name = "UCWelcomePanel"
-        UCWelcomePanel.Size = New Size(1014, 109)
+        UCWelcomePanel.Size = New Size(710, 65)
         UCWelcomePanel.TabIndex = 1
-        ' 
-        ' UCProfileLabel
-        ' 
-        UCProfileLabel.AutoSize = True
-        UCProfileLabel.Font = New Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        UCProfileLabel.Location = New Point(17, 19)
-        UCProfileLabel.Name = "UCProfileLabel"
-        UCProfileLabel.Size = New Size(89, 28)
-        UCProfileLabel.TabIndex = 0
-        UCProfileLabel.Text = "PROFILE"
         ' 
         ' ProfileInfoLabel
         ' 
         ProfileInfoLabel.AutoSize = True
         ProfileInfoLabel.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         ProfileInfoLabel.ForeColor = SystemColors.Highlight
-        ProfileInfoLabel.Location = New Point(17, 62)
+        ProfileInfoLabel.Location = New Point(12, 37)
+        ProfileInfoLabel.Margin = New Padding(2, 0, 2, 0)
         ProfileInfoLabel.Name = "ProfileInfoLabel"
-        ProfileInfoLabel.Size = New Size(458, 25)
+        ProfileInfoLabel.Size = New Size(300, 15)
         ProfileInfoLabel.TabIndex = 1
         ProfileInfoLabel.Text = "VIEW AND MANAGE YOUR PERSONAL INFORMATION"
+        ' 
+        ' UCProfileLabel
+        ' 
+        UCProfileLabel.AutoSize = True
+        UCProfileLabel.Font = New Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        UCProfileLabel.Location = New Point(12, 11)
+        UCProfileLabel.Margin = New Padding(2, 0, 2, 0)
+        UCProfileLabel.Name = "UCProfileLabel"
+        UCProfileLabel.Size = New Size(63, 19)
+        UCProfileLabel.TabIndex = 0
+        UCProfileLabel.Text = "PROFILE"
         ' 
         ' Panel1
         ' 
@@ -101,10 +104,98 @@ Partial Class UserControlDashBoard
         Panel1.Controls.Add(OverviewIDLabel)
         Panel1.Controls.Add(OverviewNameLabel)
         Panel1.Controls.Add(PictureBox1)
-        Panel1.Location = New Point(3, 118)
+        Panel1.Location = New Point(2, 71)
+        Panel1.Margin = New Padding(2, 2, 2, 2)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(468, 448)
+        Panel1.Size = New Size(328, 269)
         Panel1.TabIndex = 2
+        ' 
+        ' OverviewAddressLabel
+        ' 
+        OverviewAddressLabel.AutoSize = True
+        OverviewAddressLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        OverviewAddressLabel.Location = New Point(22, 216)
+        OverviewAddressLabel.Margin = New Padding(2, 0, 2, 0)
+        OverviewAddressLabel.Name = "OverviewAddressLabel"
+        OverviewAddressLabel.Size = New Size(61, 19)
+        OverviewAddressLabel.TabIndex = 8
+        OverviewAddressLabel.Text = "Address:"
+        ' 
+        ' OverviewGenderLabel
+        ' 
+        OverviewGenderLabel.AutoSize = True
+        OverviewGenderLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        OverviewGenderLabel.Location = New Point(22, 193)
+        OverviewGenderLabel.Margin = New Padding(2, 0, 2, 0)
+        OverviewGenderLabel.Name = "OverviewGenderLabel"
+        OverviewGenderLabel.Size = New Size(58, 19)
+        OverviewGenderLabel.TabIndex = 7
+        OverviewGenderLabel.Text = "Gender:"
+        ' 
+        ' OverviewBirthdateLabel
+        ' 
+        OverviewBirthdateLabel.AutoSize = True
+        OverviewBirthdateLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        OverviewBirthdateLabel.Location = New Point(22, 171)
+        OverviewBirthdateLabel.Margin = New Padding(2, 0, 2, 0)
+        OverviewBirthdateLabel.Name = "OverviewBirthdateLabel"
+        OverviewBirthdateLabel.Size = New Size(69, 19)
+        OverviewBirthdateLabel.TabIndex = 6
+        OverviewBirthdateLabel.Text = "Birthdate:"
+        ' 
+        ' OverviewContactLabel
+        ' 
+        OverviewContactLabel.AutoSize = True
+        OverviewContactLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        OverviewContactLabel.Location = New Point(22, 149)
+        OverviewContactLabel.Margin = New Padding(2, 0, 2, 0)
+        OverviewContactLabel.Name = "OverviewContactLabel"
+        OverviewContactLabel.Size = New Size(61, 19)
+        OverviewContactLabel.TabIndex = 5
+        OverviewContactLabel.Text = "Contact:"
+        ' 
+        ' OverviewEmailLabel
+        ' 
+        OverviewEmailLabel.AutoSize = True
+        OverviewEmailLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        OverviewEmailLabel.Location = New Point(22, 126)
+        OverviewEmailLabel.Margin = New Padding(2, 0, 2, 0)
+        OverviewEmailLabel.Name = "OverviewEmailLabel"
+        OverviewEmailLabel.Size = New Size(52, 19)
+        OverviewEmailLabel.TabIndex = 3
+        OverviewEmailLabel.Text = "E-mail:"
+        ' 
+        ' OverviewIDLabel
+        ' 
+        OverviewIDLabel.AutoSize = True
+        OverviewIDLabel.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        OverviewIDLabel.Location = New Point(95, 105)
+        OverviewIDLabel.Margin = New Padding(2, 0, 2, 0)
+        OverviewIDLabel.Name = "OverviewIDLabel"
+        OverviewIDLabel.Size = New Size(30, 21)
+        OverviewIDLabel.TabIndex = 2
+        OverviewIDLabel.Text = "ID:"
+        ' 
+        ' OverviewNameLabel
+        ' 
+        OverviewNameLabel.AutoSize = True
+        OverviewNameLabel.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        OverviewNameLabel.Location = New Point(95, 86)
+        OverviewNameLabel.Margin = New Padding(2, 0, 2, 0)
+        OverviewNameLabel.Name = "OverviewNameLabel"
+        OverviewNameLabel.Size = New Size(57, 21)
+        OverviewNameLabel.TabIndex = 1
+        OverviewNameLabel.Text = "Name:"
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.BackColor = Color.Black
+        PictureBox1.Location = New Point(111, 11)
+        PictureBox1.Margin = New Padding(2, 2, 2, 2)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(106, 73)
+        PictureBox1.TabIndex = 0
+        PictureBox1.TabStop = False
         ' 
         ' UCPersonalInfoPanel
         ' 
@@ -116,10 +207,79 @@ Partial Class UserControlDashBoard
         UCPersonalInfoPanel.Controls.Add(FullNameLabel)
         UCPersonalInfoPanel.Controls.Add(PersonalInfoLabel)
         UCPersonalInfoPanel.Controls.Add(CPNumberLabel)
-        UCPersonalInfoPanel.Location = New Point(477, 118)
+        UCPersonalInfoPanel.Location = New Point(334, 71)
+        UCPersonalInfoPanel.Margin = New Padding(2, 2, 2, 2)
         UCPersonalInfoPanel.Name = "UCPersonalInfoPanel"
-        UCPersonalInfoPanel.Size = New Size(540, 221)
+        UCPersonalInfoPanel.Size = New Size(378, 133)
         UCPersonalInfoPanel.TabIndex = 3
+        ' 
+        ' CPNumberTextBox
+        ' 
+        CPNumberTextBox.Location = New Point(101, 88)
+        CPNumberTextBox.Margin = New Padding(2, 2, 2, 2)
+        CPNumberTextBox.Name = "CPNumberTextBox"
+        CPNumberTextBox.Size = New Size(237, 23)
+        CPNumberTextBox.TabIndex = 10
+        ' 
+        ' BirthDateTextBox
+        ' 
+        BirthDateTextBox.Location = New Point(101, 65)
+        BirthDateTextBox.Margin = New Padding(2, 2, 2, 2)
+        BirthDateTextBox.Name = "BirthDateTextBox"
+        BirthDateTextBox.Size = New Size(237, 23)
+        BirthDateTextBox.TabIndex = 9
+        ' 
+        ' FullNameTextBox
+        ' 
+        FullNameTextBox.Location = New Point(101, 41)
+        FullNameTextBox.Margin = New Padding(2, 2, 2, 2)
+        FullNameTextBox.Name = "FullNameTextBox"
+        FullNameTextBox.Size = New Size(237, 23)
+        FullNameTextBox.TabIndex = 8
+        ' 
+        ' BirthdateLabel
+        ' 
+        BirthdateLabel.AutoSize = True
+        BirthdateLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BirthdateLabel.Location = New Point(13, 62)
+        BirthdateLabel.Margin = New Padding(2, 0, 2, 0)
+        BirthdateLabel.Name = "BirthdateLabel"
+        BirthdateLabel.Size = New Size(84, 19)
+        BirthdateLabel.TabIndex = 7
+        BirthdateLabel.Text = "BIRTHDATE:"
+        ' 
+        ' FullNameLabel
+        ' 
+        FullNameLabel.AutoSize = True
+        FullNameLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        FullNameLabel.Location = New Point(13, 39)
+        FullNameLabel.Margin = New Padding(2, 0, 2, 0)
+        FullNameLabel.Name = "FullNameLabel"
+        FullNameLabel.Size = New Size(87, 19)
+        FullNameLabel.TabIndex = 6
+        FullNameLabel.Text = "FULL NAME:"
+        ' 
+        ' PersonalInfoLabel
+        ' 
+        PersonalInfoLabel.AutoSize = True
+        PersonalInfoLabel.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        PersonalInfoLabel.Location = New Point(13, 11)
+        PersonalInfoLabel.Margin = New Padding(2, 0, 2, 0)
+        PersonalInfoLabel.Name = "PersonalInfoLabel"
+        PersonalInfoLabel.Size = New Size(162, 21)
+        PersonalInfoLabel.TabIndex = 2
+        PersonalInfoLabel.Text = "Personal Information"
+        ' 
+        ' CPNumberLabel
+        ' 
+        CPNumberLabel.AutoSize = True
+        CPNumberLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        CPNumberLabel.Location = New Point(13, 86)
+        CPNumberLabel.Margin = New Padding(2, 0, 2, 0)
+        CPNumberLabel.Name = "CPNumberLabel"
+        CPNumberLabel.Size = New Size(91, 19)
+        CPNumberLabel.TabIndex = 5
+        CPNumberLabel.Text = "CP NUMBER:"
         ' 
         ' UCAccountInformationPanel
         ' 
@@ -133,220 +293,11 @@ Partial Class UserControlDashBoard
         UCAccountInformationPanel.Controls.Add(EMailLabel)
         UCAccountInformationPanel.Controls.Add(UserNameLabel)
         UCAccountInformationPanel.Controls.Add(AccountInfoLabel)
-        UCAccountInformationPanel.Location = New Point(477, 345)
+        UCAccountInformationPanel.Location = New Point(334, 207)
+        UCAccountInformationPanel.Margin = New Padding(2, 2, 2, 2)
         UCAccountInformationPanel.Name = "UCAccountInformationPanel"
-        UCAccountInformationPanel.Size = New Size(540, 221)
+        UCAccountInformationPanel.Size = New Size(378, 133)
         UCAccountInformationPanel.TabIndex = 4
-        ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.BackColor = Color.Black
-        PictureBox1.Location = New Point(159, 18)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(151, 122)
-        PictureBox1.TabIndex = 0
-        PictureBox1.TabStop = False
-        ' 
-        ' OverviewNameLabel
-        ' 
-        OverviewNameLabel.AutoSize = True
-        OverviewNameLabel.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        OverviewNameLabel.Location = New Point(136, 143)
-        OverviewNameLabel.Name = "OverviewNameLabel"
-        OverviewNameLabel.Size = New Size(85, 32)
-        OverviewNameLabel.TabIndex = 1
-        OverviewNameLabel.Text = "Name:"
-        ' 
-        ' OverviewIDLabel
-        ' 
-        OverviewIDLabel.AutoSize = True
-        OverviewIDLabel.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        OverviewIDLabel.Location = New Point(136, 175)
-        OverviewIDLabel.Name = "OverviewIDLabel"
-        OverviewIDLabel.Size = New Size(44, 32)
-        OverviewIDLabel.TabIndex = 2
-        OverviewIDLabel.Text = "ID:"
-        ' 
-        ' OverviewEmailLabel
-        ' 
-        OverviewEmailLabel.AutoSize = True
-        OverviewEmailLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        OverviewEmailLabel.Location = New Point(31, 210)
-        OverviewEmailLabel.Name = "OverviewEmailLabel"
-        OverviewEmailLabel.Size = New Size(73, 28)
-        OverviewEmailLabel.TabIndex = 3
-        OverviewEmailLabel.Text = "E-mail:"
-        ' 
-        ' OverviewContactLabel
-        ' 
-        OverviewContactLabel.AutoSize = True
-        OverviewContactLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        OverviewContactLabel.Location = New Point(31, 248)
-        OverviewContactLabel.Name = "OverviewContactLabel"
-        OverviewContactLabel.Size = New Size(86, 28)
-        OverviewContactLabel.TabIndex = 5
-        OverviewContactLabel.Text = "Contact:"
-        ' 
-        ' OverviewBirthdateLabel
-        ' 
-        OverviewBirthdateLabel.AutoSize = True
-        OverviewBirthdateLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        OverviewBirthdateLabel.Location = New Point(31, 285)
-        OverviewBirthdateLabel.Name = "OverviewBirthdateLabel"
-        OverviewBirthdateLabel.Size = New Size(101, 28)
-        OverviewBirthdateLabel.TabIndex = 6
-        OverviewBirthdateLabel.Text = "Birthdate:"
-        ' 
-        ' OverviewGenderLabel
-        ' 
-        OverviewGenderLabel.AutoSize = True
-        OverviewGenderLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        OverviewGenderLabel.Location = New Point(31, 322)
-        OverviewGenderLabel.Name = "OverviewGenderLabel"
-        OverviewGenderLabel.Size = New Size(85, 28)
-        OverviewGenderLabel.TabIndex = 7
-        OverviewGenderLabel.Text = "Gender:"
-        ' 
-        ' OverviewAddressLabel
-        ' 
-        OverviewAddressLabel.AutoSize = True
-        OverviewAddressLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        OverviewAddressLabel.Location = New Point(31, 360)
-        OverviewAddressLabel.Name = "OverviewAddressLabel"
-        OverviewAddressLabel.Size = New Size(90, 28)
-        OverviewAddressLabel.TabIndex = 8
-        OverviewAddressLabel.Text = "Address:"
-        ' 
-        ' PersonalInfoLabel
-        ' 
-        PersonalInfoLabel.AutoSize = True
-        PersonalInfoLabel.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        PersonalInfoLabel.Location = New Point(18, 18)
-        PersonalInfoLabel.Name = "PersonalInfoLabel"
-        PersonalInfoLabel.Size = New Size(242, 32)
-        PersonalInfoLabel.TabIndex = 2
-        PersonalInfoLabel.Text = "Personal Information"
-        ' 
-        ' AccountInfoLabel
-        ' 
-        AccountInfoLabel.AutoSize = True
-        AccountInfoLabel.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        AccountInfoLabel.Location = New Point(18, 21)
-        AccountInfoLabel.Name = "AccountInfoLabel"
-        AccountInfoLabel.Size = New Size(239, 32)
-        AccountInfoLabel.TabIndex = 3
-        AccountInfoLabel.Text = "Account Information"
-        ' 
-        ' UserNameLabel
-        ' 
-        UserNameLabel.AutoSize = True
-        UserNameLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        UserNameLabel.Location = New Point(18, 70)
-        UserNameLabel.Name = "UserNameLabel"
-        UserNameLabel.Size = New Size(120, 28)
-        UserNameLabel.TabIndex = 4
-        UserNameLabel.Text = "USERNAME:"
-        ' 
-        ' CPNumberLabel
-        ' 
-        CPNumberLabel.AutoSize = True
-        CPNumberLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        CPNumberLabel.Location = New Point(18, 143)
-        CPNumberLabel.Name = "CPNumberLabel"
-        CPNumberLabel.Size = New Size(128, 28)
-        CPNumberLabel.TabIndex = 5
-        CPNumberLabel.Text = "CP NUMBER:"
-        ' 
-        ' EMailLabel
-        ' 
-        EMailLabel.AutoSize = True
-        EMailLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        EMailLabel.Location = New Point(18, 108)
-        EMailLabel.Name = "EMailLabel"
-        EMailLabel.Size = New Size(82, 28)
-        EMailLabel.TabIndex = 6
-        EMailLabel.Text = "E-MAIL:"
-        ' 
-        ' FullNameLabel
-        ' 
-        FullNameLabel.AutoSize = True
-        FullNameLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        FullNameLabel.Location = New Point(18, 65)
-        FullNameLabel.Name = "FullNameLabel"
-        FullNameLabel.Size = New Size(123, 28)
-        FullNameLabel.TabIndex = 6
-        FullNameLabel.Text = "FULL NAME:"
-        ' 
-        ' BirthdateLabel
-        ' 
-        BirthdateLabel.AutoSize = True
-        BirthdateLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        BirthdateLabel.Location = New Point(18, 103)
-        BirthdateLabel.Name = "BirthdateLabel"
-        BirthdateLabel.Size = New Size(120, 28)
-        BirthdateLabel.TabIndex = 7
-        BirthdateLabel.Text = "BIRTHDATE:"
-        ' 
-        ' PasswordLabel
-        ' 
-        PasswordLabel.AutoSize = True
-        PasswordLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        PasswordLabel.Location = New Point(18, 146)
-        PasswordLabel.Name = "PasswordLabel"
-        PasswordLabel.Size = New Size(118, 28)
-        PasswordLabel.TabIndex = 7
-        PasswordLabel.Text = "PASSWORD"
-        ' 
-        ' ChangePassBtn
-        ' 
-        ChangePassBtn.Location = New Point(308, 180)
-        ChangePassBtn.Name = "ChangePassBtn"
-        ChangePassBtn.Size = New Size(171, 34)
-        ChangePassBtn.TabIndex = 8
-        ChangePassBtn.Text = "Change Password"
-        ChangePassBtn.UseVisualStyleBackColor = True
-        ' 
-        ' FullNameTextBox
-        ' 
-        FullNameTextBox.Location = New Point(144, 69)
-        FullNameTextBox.Name = "FullNameTextBox"
-        FullNameTextBox.Size = New Size(337, 31)
-        FullNameTextBox.TabIndex = 8
-        ' 
-        ' BirthDateTextBox
-        ' 
-        BirthDateTextBox.Location = New Point(144, 109)
-        BirthDateTextBox.Name = "BirthDateTextBox"
-        BirthDateTextBox.Size = New Size(337, 31)
-        BirthDateTextBox.TabIndex = 9
-        ' 
-        ' CPNumberTextBox
-        ' 
-        CPNumberTextBox.Location = New Point(144, 146)
-        CPNumberTextBox.Name = "CPNumberTextBox"
-        CPNumberTextBox.Size = New Size(337, 31)
-        CPNumberTextBox.TabIndex = 10
-        ' 
-        ' UsernameTextBox
-        ' 
-        UsernameTextBox.Location = New Point(144, 70)
-        UsernameTextBox.Name = "UsernameTextBox"
-        UsernameTextBox.Size = New Size(337, 31)
-        UsernameTextBox.TabIndex = 11
-        ' 
-        ' EmailTextBox
-        ' 
-        EmailTextBox.Location = New Point(142, 105)
-        EmailTextBox.Name = "EmailTextBox"
-        EmailTextBox.Size = New Size(337, 31)
-        EmailTextBox.TabIndex = 12
-        ' 
-        ' PassTextBox
-        ' 
-        PassTextBox.Location = New Point(142, 143)
-        PassTextBox.Name = "PassTextBox"
-        PassTextBox.Size = New Size(337, 31)
-        PassTextBox.TabIndex = 13
         ' 
         ' EditLabel
         ' 
@@ -354,33 +305,112 @@ Partial Class UserControlDashBoard
         EditLabel.Cursor = Cursors.Hand
         EditLabel.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         EditLabel.ForeColor = SystemColors.HotTrack
-        EditLabel.Location = New Point(416, 21)
+        EditLabel.Location = New Point(291, 13)
+        EditLabel.Margin = New Padding(2, 0, 2, 0)
         EditLabel.Name = "EditLabel"
-        EditLabel.Size = New Size(55, 32)
+        EditLabel.Size = New Size(38, 21)
         EditLabel.TabIndex = 14
         EditLabel.Text = "Edit"
         ' 
+        ' PassTextBox
+        ' 
+        PassTextBox.Location = New Point(99, 86)
+        PassTextBox.Margin = New Padding(2, 2, 2, 2)
+        PassTextBox.Name = "PassTextBox"
+        PassTextBox.Size = New Size(237, 23)
+        PassTextBox.TabIndex = 13
+        ' 
+        ' EmailTextBox
+        ' 
+        EmailTextBox.Location = New Point(99, 63)
+        EmailTextBox.Margin = New Padding(2, 2, 2, 2)
+        EmailTextBox.Name = "EmailTextBox"
+        EmailTextBox.Size = New Size(237, 23)
+        EmailTextBox.TabIndex = 12
+        ' 
+        ' UsernameTextBox
+        ' 
+        UsernameTextBox.Location = New Point(101, 42)
+        UsernameTextBox.Margin = New Padding(2, 2, 2, 2)
+        UsernameTextBox.Name = "UsernameTextBox"
+        UsernameTextBox.Size = New Size(237, 23)
+        UsernameTextBox.TabIndex = 11
+        ' 
+        ' ChangePassBtn
+        ' 
+        ChangePassBtn.Location = New Point(216, 108)
+        ChangePassBtn.Margin = New Padding(2, 2, 2, 2)
+        ChangePassBtn.Name = "ChangePassBtn"
+        ChangePassBtn.Size = New Size(120, 20)
+        ChangePassBtn.TabIndex = 8
+        ChangePassBtn.Text = "Change Password"
+        ChangePassBtn.UseVisualStyleBackColor = True
+        ' 
+        ' PasswordLabel
+        ' 
+        PasswordLabel.AutoSize = True
+        PasswordLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        PasswordLabel.Location = New Point(13, 88)
+        PasswordLabel.Margin = New Padding(2, 0, 2, 0)
+        PasswordLabel.Name = "PasswordLabel"
+        PasswordLabel.Size = New Size(85, 19)
+        PasswordLabel.TabIndex = 7
+        PasswordLabel.Text = "PASSWORD"
+        ' 
+        ' EMailLabel
+        ' 
+        EMailLabel.AutoSize = True
+        EMailLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        EMailLabel.Location = New Point(13, 65)
+        EMailLabel.Margin = New Padding(2, 0, 2, 0)
+        EMailLabel.Name = "EMailLabel"
+        EMailLabel.Size = New Size(58, 19)
+        EMailLabel.TabIndex = 6
+        EMailLabel.Text = "E-MAIL:"
+        ' 
+        ' UserNameLabel
+        ' 
+        UserNameLabel.AutoSize = True
+        UserNameLabel.Font = New Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        UserNameLabel.Location = New Point(13, 42)
+        UserNameLabel.Margin = New Padding(2, 0, 2, 0)
+        UserNameLabel.Name = "UserNameLabel"
+        UserNameLabel.Size = New Size(86, 19)
+        UserNameLabel.TabIndex = 4
+        UserNameLabel.Text = "USERNAME:"
+        ' 
+        ' AccountInfoLabel
+        ' 
+        AccountInfoLabel.AutoSize = True
+        AccountInfoLabel.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        AccountInfoLabel.Location = New Point(13, 13)
+        AccountInfoLabel.Margin = New Padding(2, 0, 2, 0)
+        AccountInfoLabel.Name = "AccountInfoLabel"
+        AccountInfoLabel.Size = New Size(162, 21)
+        AccountInfoLabel.TabIndex = 3
+        AccountInfoLabel.Text = "Account Information"
+        ' 
         ' UserControlDashBoard
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ControlDark
         Controls.Add(UCAccountInformationPanel)
         Controls.Add(UCPersonalInfoPanel)
         Controls.Add(Panel1)
         Controls.Add(UCWelcomePanel)
-        Cursor = Cursors.Default
+        Margin = New Padding(2, 2, 2, 2)
         Name = "UserControlDashBoard"
-        Size = New Size(1020, 577)
+        Size = New Size(714, 346)
         UCWelcomePanel.ResumeLayout(False)
         UCWelcomePanel.PerformLayout()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         UCPersonalInfoPanel.ResumeLayout(False)
         UCPersonalInfoPanel.PerformLayout()
         UCAccountInformationPanel.ResumeLayout(False)
         UCAccountInformationPanel.PerformLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 

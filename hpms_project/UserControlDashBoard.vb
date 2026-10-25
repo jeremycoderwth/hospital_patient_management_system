@@ -18,4 +18,16 @@
     Private Sub EmailTextBox_TextChanged(sender As Object, e As EventArgs) Handles EmailTextBox.TextChanged
 
     End Sub
+
+    Private Sub ProfileInfoLabel_Click(sender As Object, e As EventArgs) Handles ProfileInfoLabel.Click
+
+    End Sub
+
+    Private Sub OverviewEmailLabel_Click(sender As Object, e As EventArgs) Handles OverviewEmailLabel.Click
+
+    End Sub
+
+    Private Sub UsernameTextBox_TextChanged(sender As Object, e As EventArgs) Handles UsernameTextBox.TextChanged
+
+    End Sub
 End Class
